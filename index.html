@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>Ju Stefanes</title>
+</head>
+<body>
+    <header>
+        <div>
+
+            <img src="logo.png" alt="" width="110" />
+        </div>
+
+        <ul>
+            <li> <a a target="_black" href="https://github.com/julisd" > <i class="fab fa-github fa-2x"></i> </a> </li>
+            <li>  <a target="_black" href="mailto:julisd3@gmail.com" > <i class="far fa-envelope fa-2x"></i> </a> </li>
+            <li> <a target="_black" href="https://wa.me/47991041487" > <i class="fab fa-whatsapp fa-2x"></i> </a> </li>
+            <li> <a target="_black" href="https://www.linkedin.com/in/juliana-stefanes-decarlli-526686189/" > <i class="fab fa-linkedin fa-2x"></i> </a> </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="photo">
+                <img src="perfil.jpg" alt="Juliana Stefanes">
+            </div>
+
+            <div class="nome">
+                <h1> Juliana Stefanes </h1>
+                <h5> Dev Full Stack Junior </h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow"> 
+
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style= "display: none;"id="about">
+                <p> Formada no Técnico em Informática, cursando Análise e Desenvolvimento de Sistemas no Instituto Federal de Santa Catarina e buscando pela primeira oportunidade profissional na área da tecnologia.
+
+                    
+                    Gosto de sair da minha bolha e encarar desafios, pois acredito que sair da bolha é necessário para ver o mundo com outra perspectiva.</p>
+
+            </div>
+
+            <div class="form">
+                <div>
+                    <p> Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail =]"/>
+                    <button> Enviar! </button>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+     <script>
+        function displayAbout(){
+            const arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            const display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
