@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    background-image: url(fundo2.jpg);
+    background-image: url(imagens/fundo2.jpg);
     background-size: cover;
     overflow-x: hidden;
 }
